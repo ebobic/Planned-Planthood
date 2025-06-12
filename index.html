@@ -9,23 +9,22 @@
 
 <body>
   <!-- Navbar & logotyp -->
-  <header>
-    <a href="/" class="logo">
+  <header class="header">
+    <div class="header__logo">
       <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 214 210">
         <g fill="none" stroke-width="12">
           <path d="M116.833 193.533C117.406 192.909 117.969 192.279 118.522 191.645L168.173 160.226C206.289 136.107 217.36 86.0907 192.816 48.5247C189.153 42.9185 181.619 41.3343 175.976 44.905L125.764 76.6782C121.37 70.1605 116.086 64.0725 109.92 58.5872L52.4904 7.49831C46.8526 2.48295 38.1677 2.90777 33.061 8.46735C-2.89261 47.6094 0.211903 108.041 39.9737 143.413L97.4031 194.502C103.041 199.517 111.726 199.092 116.833 193.533Z" />
           <path d="M115.122 194.336C115.527 193.897 115.927 193.455 116.319 193.009L153.69 169.521C182.93 151.143 191.451 112.997 172.598 84.3362C169.529 79.6722 163.25 78.3762 158.555 81.3272L121.425 104.664C118.17 100 114.303 95.6362 109.83 91.6843L66.4654 53.3677C61.8146 49.2582 54.6598 49.6021 50.4409 54.1641C22.9065 83.9378 25.2893 129.917 55.732 156.816L99.097 195.132C103.748 199.242 110.903 198.898 115.122 194.336Z" />
         </g>
       </svg>
-      <h1>Planned Planthood</h1>
-    </a>
-
-    <nav>
-      <ul>
-        <li><a href="#">Hem</a></li>
-        <li><a href="#">Historik</a></li>
-        <li><a href="#">Tips</a></li>
-        <li><a href="#">Kontakt</a></li>
+      <h1 class="header__heading">Planned <br> Planthood</h1>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__links" role="list">
+        <li class="header__link"><a href="#">Hem</a></li>
+        <li class="header__link"><a href="#">Historik</a></li>
+        <li class="header__link"><a href="#">Tips</a></li>
+        <li class="header__link"><a href="#">Kontakt</a></li>
       </ul>
     </nav>
   </header>
@@ -34,23 +33,32 @@
   <main>
 
     <!-- Hero-sektion med huvudrubrik och text -->
-    <section class="hero">
-      <h2>Uppskattade växter</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.</p>
-    </section>
+    <header class="gallery">
+      <h2 class="gallery__heading">Uppskattade växter</h2>
+      <p class="gallery__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis
+        ipsum.</p>
+      <section class="gallery__grid">
+        <img class="gallery__image gallery__image--1" src="https://placehold.co/300x200/a3e635/fff" alt="placeholder image">
+        <img class="gallery__image gallery__image--2" src="https://placehold.co/300x200/ef4444/fff" alt="placeholder image">
+        <img class="gallery__image gallery__image--3" src="https://placehold.co/300x200/3b82f6/fff" alt="placeholder image">
+        <img class="gallery__image gallery__image--4" src="https://placehold.co/300x200/f97316/fff" alt="placeholder image">
+        <img class="gallery__image gallery__image--5" src="https://placehold.co/300x200/8b5cf6/fff" alt="placeholder image">
+        <img class="gallery__image gallery__image--6" src="https://placehold.co/300x200/facc15/fff" alt="placeholder image">
+      </section>
+    </header>
 
     <!-- Nyhetsbrev med anmälningsformulär -->
-    <section class="newsletter">
+    <article class="newsletter">
       <h2>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h2>
       <form>
         <input type="email" placeholder="email@domain.com">
         <!-- Skicka-knapp -->
         <input type="submit" value="SKICKA">
       </form>
-    </section>
+    </article>
 
     <!-- Sektion för filtrerbara plantkort -->
-    <section class="plant-grid-container">
+    <section class="cards">
 
       <!-- Filterknappar -->
       <div class="filters">
@@ -60,17 +68,17 @@
       </div>
 
       <!-- Grid med plantartiklar -->
-      <div class="plant-grid">
+      <div class="cards__grid">
 
         <!-- Artikel: Gurka -->
-        <article>
+        <article class="card">
           <img src="https://placehold.co/400x300/a3e635/4d7c0f?text=Gurka" alt="En gurka">
-          <div class="card-content">
-            <h3>Gurka</h3>
-            <div class="tags">
+          <div class="card__content">
+            <h3 class="card__heading">Gurka</h3>
+            <div class="card__tags">
             </div>
-            <p>Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning...</p>
-            <div class="author">
+            <p class="card__description">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning...</p>
+            <div class="card__author">
               <span>Coolio</span>
               <time datetime="2024-04-01">2024-04-01</time>
             </div>
@@ -78,25 +86,25 @@
         </article>
 
         <!-- Artikel: Tomat -->
-        <article>
+        <article class="card">
           <img src="https://placehold.co/400x300/ef4444/7f1d1d?text=Tomat" alt="En tomat">
-          <div class="card-content">
-            <h3>Tomat</h3>
-            <div class="tags">
+          <div class="card__content">
+            <h3 class="card__heading">Tomat</h3>
+            <div class="card__tags">
               <span class="tag tag--sunloving">Solälskande</span>
               <span class="tag tag--easy">Lättodlat</span>
               <span class="tag tag--edible">Ätbart</span>
             </div>
-            <p>En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
-            <div class="author">
+            <p class="card__description">En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
+            <div class="card__author">
               <span>Anna Odlare</span>
               <time datetime="2024-12-05">2024-12-05</time>
             </div>
           </div>
         </article>
 
-      </div> <!-- .plant-grid -->
-    </section> <!-- .plant-grid-container -->
+      </div>
+    </section>
 
     <!-- Sektion för tidigare odlingar -->
     <section class="tidigare-odlingar">
@@ -123,7 +131,7 @@
       <!-- Kontaktinformation -->
       <div class="footer-column contact">
         <h3>Kontakt</h3>
-        <ul>
+        <ul role="list">
           <li><a href="tel:020-1234567">Telefon: 020-1234567</a></li>
           <li><a href="mailto:info@plannedplant.com">info@plannedplant.com</a></li>
         </ul>
@@ -132,7 +140,7 @@
       <!-- Footer-länkar -->
       <div class="footer-column links">
         <h3>Länkar</h3>
-        <ul>
+        <ul role="list">
           <li><a href="#">Hem</a></li>
           <li><a href="#">Historik</a></li>
           <li><a href="#">Tips</a></li>
