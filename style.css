@@ -52,7 +52,7 @@ figcaption {
 }
 
 /* for container queries, landmarks as containers */
-body > :is(header, footer),
+body> :is(header, footer),
 main {
   container-type: inline-size;
 }
@@ -141,7 +141,7 @@ main {
 }
 
 /* Composition */
-.flow > * + * {
+.flow>*+* {
   margin-block-start: var(--flow-space, 1em);
 }
 
@@ -164,16 +164,60 @@ h3 {
 a {
   text-decoration: none;
   color: var(--clr-accent);
-}
 
-a:hover,
-a:focus-visible {
-  color: var(--clr-primary-light-1);
-  text-decoration: underline;
+  &:hover,
+  &:focus-visible {
+    color: var(--clr-primary-light-1);
+    text-decoration: underline;
+  }
 }
 
 body {
   font-family: var(--font-base);
   background-color: var(--clr-accent-light-1);
   color: var(--clr-primary-dark);
+}
+
+header {
+  width: 60%;
+  padding: 5px;
+  margin: auto;
+  color: var(--clr-green-400);
+  font-weight: var(--fw-600);
+  font-size: var(--fs-600);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    gap: 20px;
+
+    h1 {
+      width: 40%;
+      line-height: 20px;
+    }
+  }
+
+  svg {
+    stroke: var(--clr-green-400);
+    height: 50px;
+    width: 50px;
+  }
+
+  nav {
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      gap: 100px;
+
+      li {
+        display: inline;
+      }
+    }
+  }
 }
