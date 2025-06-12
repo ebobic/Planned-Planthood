@@ -1,84 +1,140 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Planned Planthood</title>
-  </head>
-  <body>
-Planned Planthood
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Planned Planthood</title>
+</head>
 
-Hem
-Historik
-Tips
-Kontakt
+<body>
+  <!-- Navbar & logotyp -->
+  <header>
+    <a href="/" class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 214 210">
+      </svg>
+      <h1>Planned Planthood</h1>
+    </a>
 
-Uppskattade växter
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.
+    <nav>
+      <ul>
+        <li><a href="#">Hem</a></li>
+        <li><a href="#">Historik</a></li>
+        <li><a href="#">Tips</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
 
-Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!
+  <!-- Huvudinnehåll -->
+  <main>
 
-Blommor
-Ätbart
-Grönska
-Gurka
-Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.
-Coolio
-2024-04-01
+    <!-- Hero-sektion med huvudrubrik och text -->
+    <section class="hero">
+      <h2>Uppskattade växter</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.</p>
+    </section>
 
-Solälskande
-Lättodlat
-Ätbart
-Tomat
-En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.
-Anna Odlare
-2024-12-05
+    <!-- Nyhetsbrev med anmälningsformulär -->
+    <section class="newsletter">
+      <h2>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h2>
+      <form>
+        <input type="email" placeholder="email@domain.com">
+        <!-- Skicka-knapp -->
+        <input type="submit" value="SKICKA">
+      </form>
+    </section>
 
-Dekorativ
-Färgstark
-Tålig
-Blommor
-Pelargon
-En vacker och lättskött blomma som trivs både inne och ute under sommaren.
-Blomsterkalle
-2024-12-03
+    <!-- Sektion för filtrerbara plantkort -->
+    <section class="plant-grid-container">
 
-Kryddor
-Doftande
-Solälskande
-Basilika
-En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.
-Krydd-Malin
-2024-12-07
+      <!-- Filterknappar -->
+      <div class="filters">
+        <button>Blommor</button>
+        <button>Ätbart</button>
+        <button>Grönska</button>
+      </div>
 
-Snabbväxande
-Ätbart
-Grönska
-Sallad
-Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.
-Grönis
-2024-12-06
+      <!-- Grid med plantartiklar -->
+      <div class="plant-grid">
 
-Luftfuktande
-Grönska
-Dekorativ
-Ormbunke
-En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.
-Naturvännen
-2024-12-08
+        <!-- Artikel: Gurka -->
+        <article>
+          <h3>Gurka</h3>
+          <div class="tags">
+          </div>
+          <p>Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning...</p>
+          <!-- Författarinfo och datum -->
+          <div class="author">
+            <span>Coolio</span>
+            <time datetime="2024-04-01">2024-04-01</time>
+          </div>
+        </article>
 
-Våra tidigare odlingar
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?
-Planterade plantor
+        <!-- Artikel: Tomat -->
+        <article>
+          <h3>Tomat</h3>
+          <!-- Taggar -->
+          <div class="tags">
+            <span>Solälskande</span>
+            <span>Lättodlat</span>
+            <span>Ätbart</span>
+          </div>
+          <p>En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
+          <!-- Författarinfo och datum -->
+          <div class="author">
+            <span>Anna Odlare</span>
+            <time datetime="2024-12-05">2024-12-05</time>
+          </div>
+        </article>
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?
-Telefon: 020-1234567
-info@plannedplant.com
+      </div> <!-- .plant-grid -->
+    </section> <!-- .plant-grid-container -->
 
-Hem
-Historik
-Tips
-Kontakt
-  </body>
+    <!-- Sektion för tidigare odlingar -->
+    <section class="tidigare-odlingar">
+      <h2>Våra tidigare odlingar</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt...
+      </p>
+      <!-- Knapp för mer info -->
+      <button>Planterade plantor</button>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+
+      <!-- Om-sektion -->
+      <div class="footer-column about">
+        <h3>Planned Planthood</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <!-- Kontaktinformation -->
+      <div class="footer-column contact">
+        <h3>Kontakt</h3>
+        <ul>
+          <li><a href="tel:020-1234567">Telefon: 020-1234567</a></li>
+          <li><a href="mailto:info@plannedplant.com">info@plannedplant.com</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer-länkar -->
+      <div class="footer-column links">
+        <h3>Länkar</h3>
+        <ul>
+          <li><a href="#">Hem</a></li>
+          <li><a href="#">Historik</a></li>
+          <li><a href="#">Tips</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
 </html>
