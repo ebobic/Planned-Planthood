@@ -100,63 +100,253 @@
     </article>
 
     <!-- Sektion för filtrerbara plantkort -->
-    <section class="cards">
 
-      <!-- Filterknappar -->
-      <div class="filters">
-        <button>Blommor</button>
-        <button>Ätbart</button>
-        <button>Grönska</button>
-      </div>
+    <!-- Gurka-->
+    <article class="plants">
+      <section class="plants__card">
+        <img class="plants_image" src="./Assets/images/gurka.png" alt="En svenskodlad gurka">
+        <ul class="plants__tags">
+          <li class="plants__tag plants__tag--flower">Blommor</li>
+          <li class="plants__tag plants__tag--edible">Ätbart</li>
+          <li class="plants__tag plants__tag--green">Grönska</li>
+        </ul>
+        <h2 class="plants__heading">Gurka</h2>
+        <p class="plants__description">
+          Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering,
+          duschning och gödsling.
+        </p>
+        <section class="plants__profile">
+          <img class="plants__avatar" src="./Assets/images/coolio-icon.webp" alt="Profilbild">
+          <p>
+            <b>Coolio</b> <br>
+            <time datetime="2024-04-01">2024-04-01</time>
+          </p>
+        </section>
+      </section>
 
-      <!-- Grid med plantartiklar -->
-      <div class="cards__grid">
+     <!-- Tomat-->
+      <section class="plants__card">
+        <img class="plants_image" src="./Assets/images/tomat1.jpg" alt="Solmogna röda tomater">
+        <ul class="plants__tags">
+          <li class="plants__tag plants__tag--sunloving">Solälskande</li>
+          <li class="plants__tag plants__tag--easy">Lättodlat</li>
+          <li class="plants__tag plants__tag--edible">Ätbart</li>
+        </ul>
+        <h2 class="plants__heading">Tomat</h2>
+        <p class="plants__description">En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd
+          under sommaren.</p>
+        <section class="plants__profile">
+          <img class="plants__avatar" src="./Assets/images/annaodlare-icon.webp" alt="Profilbild">
+          <p>
+            <b>Anna Odlare</b><br>
+            <time datetime="2024-12-05">2024-12-05</time>
+          </p>
+        </section>
+      </section>
 
-        <!-- Artikel: Gurka -->
-        <article class="card">
-          <img src="https://placehold.co/400x300/a3e635/4d7c0f?text=Gurka" alt="En gurka">
-          <div class="card__content">
-            <h3 class="card__heading">Gurka</h3>
-            <div class="card__tags">
-            </div>
-            <p class="card__description">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning...</p>
-            <div class="card__author">
-              <span>Coolio</span>
-              <time datetime="2024-04-01">2024-04-01</time>
-            </div>
-          </div>
-        </article>
+        <!-- Pelargon-->
+      <section class="plants__card">
+        <img class="plants_image" src="./Assets/images/pelargon.webp" alt="En vacker och tålig pelargon">
+        <ul class="plants__tags">
+          <li class="plants__tag plants__tag--decorative">Dekorativ</li>
+          <li class="plants__tag plants__tag--colorful">Färgstark</li>
+          <li class="plants__tag plants__tag--robust">Tålig</li>
+          <li class="plants__tag plants__tag--flower">Blommor</li>
+        </ul>
+        <h2 class="plants__heading">Pelargon</h2>
+        <p class="plants__description">En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
+        <section class="plants__profile">
+          <img class="plants__avatar" src="./Assets/images/blomsterkalle-icon.webp" alt="Profilbild">
+          <p>
+            <b>Blomsterkalle</b> <br>
+            <time datetime="2024-12-03">2024-12-03</time>
+          </p>
+        </section>
+      </section>
 
-        <!-- Artikel: Tomat -->
-        <article class="card">
-          <img src="https://placehold.co/400x300/ef4444/7f1d1d?text=Tomat" alt="En tomat">
-          <div class="card__content">
-            <h3 class="card__heading">Tomat</h3>
-            <div class="card__tags">
-              <span class="tag tag--sunloving">Solälskande</span>
-              <span class="tag tag--easy">Lättodlat</span>
-              <span class="tag tag--edible">Ätbart</span>
-            </div>
-            <p class="card__description">En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
-            <div class="card__author">
-              <span>Anna Odlare</span>
-              <time datetime="2024-12-05">2024-12-05</time>
-            </div>
-          </div>
-        </article>
+      <section class="plants__card">
+        <img class="plants_image" src="https://picsum.photos/100/120?4" alt="Slumpad bild">
+        <ul class="plants__tags">
+          <li class="plants__tag plants__tag--spice">Kryddor</li>
+          <li class="plants__tag plants__tag--fragrant">Doftande</li>
+          <li class="plants__tag plants__tag--sunloving">Solälskande</li>
+        </ul>
+        <h2 class="plants__heading">Basilika</h2>
+        <p class="plants__description">En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt
+          fönster.</p>
+        <section class="plants__profile">
+          <img class="plants__avatar" src="./Assets/images/kryddmalin-icon.webp" alt="Profilbild">
+          <p>
+            <b>Krydd-Malin</b><br>
+            <time datetime="2024-12-07">2024-12-07</time>
+          </p>
+        </section>
+      </section>
 
-      </div>
-    </section>
+      <section class="plants__card">
+        <img class="plants_image" src="https://picsum.photos/100/120?5" alt="Slumpad bild">
+        <ul class="plants__tags">
+          <li class="plants__tag plants__tag--fast">Snabbväxande</li>
+          <li class="plants__tag plants__tag--edible">Ätbart</li>
+          <li class="plants__tag plants__tag--green">Grönska</li>
+        </ul>
+        <h2 class="plants__heading">Sallad</h2>
+        <p class="plants__description">Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för
+          färska måltider.</p>
+        <section class="plants__profile">
+          <img class="plants__avatar" src="./Assets/images/grönis-icon.webp" alt="Profilbild">
+          <p>
+            <b>Grönis</b><br>
+            <time datetime="2024-12-06">2024-12-06</time>
+          </p>
+        </section>
+      </section>
 
-    <!-- Sektion för tidigare odlingar -->
-    <section class="tidigare-odlingar">
-      <h2>Våra tidigare odlingar</h2>
+      <section class="plants__card">
+        <img class="plants_image" src="https://picsum.photos/100/120?6" alt="Slumpad bild">
+        <ul class="plants__tags">
+          <li class="plants__tag plants__tag--air">Luftfuktande</li>
+          <li class="plants__tag plants__tag--green">Grönska</li>
+          <li class="plants__tag plants__tag--decorative">Dekorativ</li>
+        </ul>
+        <h2 class="plants__heading">Ormbunke</h2>
+        <p class="plants__description">En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
+        <section class="plants__profile">
+          <img class="plants__avatar" src="./Assets/images/naturvännen.webp" alt="Profilbild">
+          <p>
+            <b>Naturvännen</b><br>
+            <time datetime="2024-12-08">2024-12-08</time>
+          </p>
+        </section>
+      </section>
+      <section class="plants__card">
+        <img class="plants_image" src="https://picsum.photos/100/120?7" alt="Slumpad bild">
+        <ul class="plants__tags">
+          <li class="plants__tag plants__tag--flower">Blommor</li>
+          <li class="plants__tag plants__tag--edible">Ätbart</li>
+          <li class="plants__tag plants__tag--green">Grönska</li>
+        </ul>
+        <h2 class="plants__heading">Gurka</h2>
+        <p class="plants__description">
+          Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering,
+          duschning och gödsling.
+        </p>
+        <section class="plants__profile">
+          <img class="plants__avatar" src="./Assets/images/coolio-icon.webp" alt="Profilbild">
+          <p>
+            <b>Coolio</b><br>
+            <time datetime="2024-04-01">2024-04-01</time>
+          </p>
+        </section>
+      </section>
+
+      <section class="plants__card">
+        <img class="plants_image" src="https://picsum.photos/100/120?8" alt="Slumpad bild">
+        <ul class="plants__tags">
+          <li class="plants__tag plants__tag--sunloving">Solälskande</li>
+          <li class="plants__tag plants__tag--easy">Lättodlat</li>
+          <li class="plants__tag plants__tag--edible">Ätbart</li>
+        </ul>
+        <h2 class="plants__heading">Tomat</h2>
+        <p class="plants__description">En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd
+          under sommaren.</p>
+        <section class="plants__profile">
+          <img class="plants__avatar" src="./Assets/images/annaodlare-icon.webp" alt="Profilbild">
+          <p>
+            <b>Anna Odlare</b><br>
+            <time datetime="2024-12-05">2024-12-05</time>
+          </p>
+        </section>
+      </section>
+
+      <section class="plants__card">
+        <img class="plants_image" src="https://picsum.photos/100/120?9" alt="Slumpad bild">
+        <ul class="plants__tags">
+          <li class="plants__tag plants__tag--decorative">Dekorativ</li>
+          <li class="plants__tag plants__tag--colorful">Färgstark</li>
+          <li class="plants__tag plants__tag--robust">Tålig</li>
+          <li class="plants__tag plants__tag--flower">Blommor</li>
+        </ul>
+        <h2 class="plants__heading">Pelargon</h2>
+        <p class="plants__description">En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
+        <section class="plants__profile">
+          <img class="plants__avatar" src="./Assets/images/blomsterkalle-icon.webp" alt="Profilbild>
+          <p>
+            <b>Blomsterkalle</b><br>
+            <time datetime="2024-12-03">2024-12-03</time>
+          </p>
+        </section>
+      </section>
+
+      <section class="plants__card">
+        <img class="plants_image" src="https://picsum.photos/100/120?10" alt="Slumpad bild">
+        <ul class="plants__tags">
+          <li class="plants__tag plants__tag--spice">Kryddor</li>
+          <li class="plants__tag plants__tag--fragrant">Doftande</li>
+          <li class="plants__tag plants__tag--sunloving">Solälskande</li>
+        </ul>
+        <h2 class="plants__heading">Basilika</h2>
+        <p class="plants__description">En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt
+          fönster.</p>
+        <section class="plants__profile">
+          <img class="plants__avatar" src="./Assets/images/kryddmalin-icon.webp" alt="Profilbild">
+          <p>
+            <b>Krydd-Malin</b><br>
+            <time datetime="2024-12-07">2024-12-07</time>
+          </p>
+        </section>
+      </section>
+
+      <section class="plants__card">
+        <img class="plants_image" src="https://picsum.photos/100/120?11" alt="Slumpad bild">
+        <ul class="plants__tags">
+          <li class="plants__tag plants__tag--fast">Snabbväxande</li>
+          <li class="plants__tag plants__tag--edible">Ätbart</li>
+          <li class="plants__tag plants__tag--green">Grönska</li>
+        </ul>
+        <h2 class="plants__heading">Sallad</h2>
+        <p class="plants__description">Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för
+          färska måltider.</p>
+        <section class="plants__profile">
+          <img class="plants__avatar" src="./Assets/images/grönis-icon.webp" alt="Profilbild">
+          <p>
+            <b>Grönis</b><br>
+            <time datetime="2024-12-06">2024-12-06</time>
+          </p>
+        </section>
+      </section>
+
+      <section class="plants__card">
+        <img src="https://picsum.photos/100/120?12" alt="Slumpad bild">
+        <ul class="plants__tags">
+          <li class="plants__tag plants__tag--air">Luftfuktande</li>
+          <li class="plants__tag plants__tag--green">Grönska</li>
+          <li class="plants__tag plants__tag--decorative">Dekorativ</li>
+        </ul>
+        <h2 class="plants__heading">Ormbunke</h2>
+        <p class="plants__description">En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
+        <section class="plants__profile">
+          <img class="plants__avatar" src="./Assets/images/naturvännen.webp" alt="Profilbild">
+          <p>
+            <b>Naturvännen</b><br>
+            <time datetime="2024-12-08">2024-12-08</time>
+          </p>
+        </section>
+      </section>
+
+    </article>
+
+    <article>
+      <h1>Våra tidigare odlingar</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt...
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt
+        veritatis.
+        Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat
+        doloribus?
+        Planterade plantor
       </p>
-      <!-- Knapp för mer info -->
       <button>Planterade plantor</button>
-    </section>
+    </article>
 
   </main>
 

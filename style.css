@@ -371,6 +371,123 @@ footer {
 
 }
 
+.plants {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  width: 50%;
+  margin: 50px auto;
+}
+
+.plants__card {
+  width: 200px;
+  padding: 15px;
+  background-color: var(--clr-neutral-100);
+  box-shadow: var(--border-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.plants__image {
+  max-height: 120px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.plants__tags {
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-100);
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+  margin: 10px auto;
+}
+
+.plants__tag {
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 99999px;
+  background-color: var(--clr-neutral-900);
+}
+
+.plants__tag--robust {
+  background-color: var(--clr-robust);
+}
+
+.plants__tag--green {
+  background-color: var(--clr-green);
+}
+
+.plants__tag--flower {
+  background-color: var(--clr-flower);
+}
+
+.plants__tag--colorful {
+  background-color: var(--clr-colorful);
+}
+
+.plants__tag--sunloving {
+  background-color: var(--clr-sunloving);
+}
+
+.plants__tag--air {
+  background-color: var(--clr-air);
+}
+
+.plants__tag--decorative {
+  background-color: var(--clr-decorative);
+}
+
+.plants__tag--edible {
+  background-color: var(--clr-edible);
+}
+
+.plants__tag--easy {
+  background-color: var(--clr-easy);
+}
+
+.plants__tag--fragrant {
+  background-color: var(--clr-fragrant);
+}
+
+.plants__tag--fast {
+  background-color: var(--clr-fast);
+}
+
+.plants__tag--spice {
+  background-color: var(--clr-green-200);
+}
+
+.plants__heading {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-500);
+  margin: 15px 0;
+}
+
+.plants__description {
+  margin-bottom: 20px;
+  font-size: var(--fs-400);
+}
+
+.plants__profile {
+  margin-top: auto;
+  font-size: var(--fs-200);
+  display: flex;
+  place-items: center;
+  gap: 10px;
+
+  b {
+    font-weight: var(--fw-600);
+  }
+}
+
+
+.plants__avatar {
+  width: 50px;
+}
+
+
 footer * {
   margin-bottom: 20px;
 
