@@ -235,7 +235,9 @@ main {
   background-color: var(--clr-neutral-200);
 }
 
-
+article {
+  margin: 50px 0;
+}
 
 .gallery {
   padding: 20px;
@@ -487,6 +489,60 @@ footer {
   width: 50px;
 }
 
+.tidigare-odlingar {
+  background-color: var(--clr-neutral-100);
+  padding: 50px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 80px;
+}
+
+.tidigare-odlingar__figure {
+  padding: 50px 60px;
+  border-radius: 50%;
+  background-color: var(--clr-green-400);
+  max-width: 200px;
+}
+
+.tidigare-odlingar__figure svg {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.tidigare-odlingar__info {
+  display: grid;
+}
+
+.tidigare-odlingar__heading {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-700);
+  margin: 15px 0;
+}
+
+.tidigare-odlingar__description {
+  margin: 0 0 30px 0;
+}
+
+.tidigare-odlingar__link {
+  padding: 10px 15px;
+  border-radius: 9999px;
+  background-color: var(--clr-green-400);
+  color: var(--clr-neutral-100);
+  margin-left: auto;
+}
+
+
+footer {
+  background-color: var(--clr-green-400);
+  color: var(--clr-neutral-100);
+
+  li {
+    list-style-type: none;
+    font-weight: var(--fw-600);
+  }
+}
 
 footer * {
   margin-bottom: 20px;
