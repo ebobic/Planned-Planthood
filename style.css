@@ -346,7 +346,9 @@ article {
   display: flex;
   width: 70%;
   justify-content: space-between;
-}
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
 
 .newsletter__input {
   margin: auto;
@@ -355,13 +357,30 @@ article {
   color: var(--clr-neutral-900);
 }
 
+.newsletter__input:focus {
+  outline: none;
+}
+
+.newsletter__signup:focus-within {
+  border-color: var(--clr-green-400);
+  box-shadow: 0 0 5px hsla(169, 86%, 28%, 0.2);
+  transform: scale(1.03);
+}
+
 .newsletter__submit {
   height: 100%;
   padding: 10px 15px;
   border-radius: 50px;
   border: 1px var(--clr-neutral-400) solid;
   background-color: var(--clr-green-400);
-  transition: .2s;
+  transition: background-color 0.2s ease-in-out
+  
+}
+
+.newsletter__submit:hover {
+  background-color: var(--clr-green-800); 
+  color: var(--clr-neutral-100);       
+  cursor: pointer;                      
 }
 
 .newsletter__figure {
@@ -552,6 +571,13 @@ footer {
   background-color: var(--clr-green-400);
   color: var(--clr-neutral-100);
   margin-left: auto;
+  transition: background-color 0.2s ease-in-out
+}
+
+.tidigare-odlingar__link:hover {
+  background-color: var(--clr-green-800);
+  color: var(--clr-neutral-100); 
+  text-decoration: none;
 }
 
 
@@ -641,6 +667,7 @@ footer * {
 
   a {
     color: var(--clr-neutral-100);
+    text-decoration: none;
   }
 }
 
