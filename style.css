@@ -183,11 +183,13 @@ body {
   color: var(--clr-green-400);
   font-weight: var(--fw-medium);
   font-size: var(--fs-500);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   text-transform: uppercase;
-  gap: 10%;
+  padding-block: 5px;
+  padding-inline: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22vw;
 }
 
 .header__logo {
@@ -316,25 +318,34 @@ article {
   grid-area: image6;
 }
 
+/* --- Nyhetsbrev Sektion  --- */
+
 .newsletter {
   background-color: var(--clr-neutral-100);
-  padding: 50px;
+  padding: 4rem 2rem; /* Lite mer luft för sektionen */
 }
 
 .newsletter__flex {
   display: flex;
-  flex-flow: row nowrap;
-  width: 40%;
-  margin: auto;
+  flex-wrap: wrap; 
+  justify-content: center;
   align-items: center;
+  gap: 4rem; 
+}
+
+
+.newsletter__flex > div {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  gap: 1.5rem; 
 }
 
 .newsletter__heading {
   font-size: var(--fs-700);
-  font-weight: var(--fw-700);
-  width: 80%;
-  margin-bottom: 10px;
-
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+  max-width: 25ch; 
 }
 
 .newsletter__signup {
@@ -342,42 +353,49 @@ article {
   border-radius: 50px;
   padding: 5px;
   display: flex;
-  width: minmax(fit-content, 70%);
   justify-content: space-between;
+  width: 100%; 
+  max-width: 450px; 
   transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .newsletter__signup:focus-within {
   border-color: var(--clr-green-400);
   box-shadow: 0 0 5px hsla(169, 86%, 28%, 0.2);
-  transform: scale(1.03);
+  transform: scale(1.02); 
 }
 
 .newsletter__input {
-  margin: auto;
-  background-color: var(--clr-neutral-100);
-  border: var(--clr-neutral-100) 1px solid;
-  color: var(--clr-neutral-900);
+  flex-grow: 1; 
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: var(--fs-400);
 }
 
 .newsletter__input:focus {
   outline: none;
 }
 
+.newsletter__input::placeholder {
+  color: var(--clr-neutral-300);
+}
+
 .newsletter__submit {
-  height: 100%;
-  padding: 10px 15px;
+  padding: 10px 20px;
   border-radius: 50px;
-  border: 1px var(--clr-neutral-400) solid;
+  border: none;
   background-color: var(--clr-green-400);
-  transition: background-color 0.2s ease-in-out
-  
+  color: var(--clr-neutral-100); 
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .newsletter__submit:hover {
-  background-color: var(--clr-green-800); 
-  color: var(--clr-neutral-100);       
-  cursor: pointer;                      
+  background-color: var(--clr-green-800);
+  color: var(--clr-neutral-100);
 }
 
 .newsletter__figure {
