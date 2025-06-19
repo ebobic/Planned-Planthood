@@ -1,4 +1,3 @@
 # Inlämningsuppgift Planned Planthood
 
-Se liveversion: [plannedplanthood-emil.netlify.app](url)
-
+Se liveversion: https://plannedplanthood-emil.netlify.app/
